@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+
+@theme {
+    --color-primary: #E36C6C;
+    --color-secondary: #F4C2C2;
+    --color-tertiary: #8B5E3C;
+    --color-background: #FFF8F0;
+    --color-text: #2E2E2E;
+    --color-text-muted: #6E6E6E;
+
+    --font-sans: 'Quicksand', sans-serif;
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Playfair Display', serif;
+};
+
+body {
+    font-family: var(--font-sans);
+}
