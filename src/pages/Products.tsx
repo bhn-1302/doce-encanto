@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 type Product = {
   id: number;
   name: string;
@@ -71,11 +73,8 @@ export const Products = () => {
               <p className="font-primary text-text-muted cursor-default">
                 {produto.description}
               </p>
-              <a
-                href="/menu"
-                className="inline-block mt-2 py-2 px-6 bg-primary text-white font-primary font-medium rounded-lg shadow hover:bg-secondary transition-colors"
-              >
-                Ver no Cardápio
+              <a className="inline-block mt-2 py-2 px-6 bg-primary text-white font-primary font-medium rounded-lg shadow hover:bg-secondary transition-colors">
+                <Link to={"/menu"}>Ver no Cardápio</Link>
               </a>
             </div>
           </div>
